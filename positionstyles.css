@@ -100,50 +100,31 @@
   /* This is the parent of the activity 4 boxes. */
   height: 400px;
   display: grid;
-<<<<<<< HEAD
   grid-template-columns: 1fr 1fr;
 }
 .red4 {
   width: 100%; 
-=======
-  grid-template-columns: 300px 300px;
-}
-.red4 {
-  width: 300px; 
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
   height: 400px; 
   background-color: red; 
   grid-column: 1/2;
   grid-row: 1/4;
 } 
 .green4 {
-<<<<<<< HEAD
   width: 100%; 
-=======
-  width: 300px; 
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
   height: 100%; 
   background-color: green; 
   grid-column: 2/3;
   grid-row: 1/2;
 } 
 .yellow4 {
-<<<<<<< HEAD
   width: 100%; 
-=======
-  width: 300px; 
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
   height: 100%; 
   background-color: gold; 
   grid-column: 2/3;
   grid-row: 2/3;
 } 
 .blue4 {
-<<<<<<< HEAD
   width: 100%; 
-=======
-  width: 300px; 
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
   height: 100%; 
   background-color: blue; 
   grid-column: 2/3;
