@@ -1,0 +1,37 @@
+.desk {
+    border: 10px solid #363945;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 50px 80px;
+}
+
+.person {
+    border: 10px solid #363945;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 50px 80px;
+}
+
+.graphic {
+    border: 10px solid #363945;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 50px 80px;
+}
+
+.title {
+    width: 100%;
+    height: 500px;
+    margin: 0;
+}
+
+.banner {
+    background-color: grey;
+}
+
+body {
+    margin: 0;
+}
