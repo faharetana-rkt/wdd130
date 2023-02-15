@@ -10,14 +10,11 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 35px;
-<<<<<<< HEAD
 }
 
 nav {
     display: flex;
     justify-content: space-around;
-=======
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
 }
 
 #hero-msg h1, #hero-msg h4 {
@@ -70,20 +67,9 @@ nav a:hover {
     color: white;
 }
 
-<<<<<<< HEAD
 .join:hover {
     background-color: #ADE5E8;
     color: black;
-=======
-#background {
-    background-color: #004E98;
-}
-
-.msg {
-    background-color: #F17300;
-    line-height: 1.5em;
-    padding: 35px;
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
 }
 
 footer {
@@ -92,12 +78,9 @@ footer {
     text-decoration: none;
     padding: 25px 50px;
     margin-top: 200px;
-<<<<<<< HEAD
     display: flex;
     justify-content: space-around;
     align-items: center;
-=======
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
 }
 
 .home-title {
@@ -171,15 +154,10 @@ h2 {
     margin: 0;
 }
 
-<<<<<<< HEAD
 #logo_link {
     padding-top: 5px;
     justify-self: center;
     align-self: center;
-=======
-#logo-link {
-    padding-top: 5px;
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
 }
 
 footer .social img {
@@ -192,7 +170,6 @@ footer .social img {
 
 .card-img {
     border: 10px solid #004E98;
-<<<<<<< HEAD
     transition: transform .5s;
     box-shadow: 5px 5px 10px #004E98;
 }
@@ -288,7 +265,3 @@ main, .home-grid {
         margin-top: 25px;
     }
 }
-=======
-}
-
->>>>>>> 5d130b7ccaf08d86ce7195285d9755aa2ac46116
