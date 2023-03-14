@@ -9,6 +9,7 @@
     <style>
       form {
         /* Center the form on the page */
+        display: block;
         margin: 0 auto;
         width: 400px;
         /* Form outline */
@@ -101,28 +102,26 @@
           <a href="contactus.html">Contact Us</a>
         </nav>
       </header>
-      <main>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="mail">Email:</label>
-              <input type="email" id="mail" name="user_email" />
-            </li>
-            <li>
-              <label for="msg">Message:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li class="button">
-              <button type="submit">Send your message</button>
-            </li>
-          </ul>
-        </form>
-      </main>
+      <div id="feedback"></div>
+      <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message"></textarea>
+          </li>
+          <li class="button">
+            <button type="submit">Send your message</button>
+          </li>
+        </ul>
+      </form>
       <footer>
         <p>Dry Oar &copy; 2023 - Faharetana Rakotomamonjy</p>
         <p><a href="site-plan-rafting.html">Site Plan</a></p>
