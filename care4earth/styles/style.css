@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Source+Sans+Pro:wght@300&display=swap');
+
+header {
+    width: 100%;
+    height: 110px;
+    background-color: #52AA5E;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 15% 20% 20% 25% 20%;
+}
+
+.logo {
+    width: 210px;
+    margin-left: 20px;
+    border-radius: 15px 50px 30px;
+    grid-column: 1/2;
+}
+
+#logo-link {
+    justify-self: center;
+    align-self: center;
+}
+
+
+nav {
+    grid-column: 2/6;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a:hover {
+    background-color: #3AAED8;
+    color: white; 
+}
+
+nav a {
+    text-align: center;
+    text-decoration: none;
+    padding: 35px;
+    color: white;
+}
+
+body {
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+    background-color: #e9f5db;
+}
+
+#hero {
+    width: 95%;
+    margin: 5% auto;
+}
+
+#hero h1 {
+    text-align: center;
+    font-family: Lobster, 'Times New Roman', serif;
+    color: #388659;
+    font-size: 3em;
+}
+
+#hero-img {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+#hero-box {
+    width: 100%;
+}
+
+.hero-paragraph {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.hero-paragraph p {
+    text-align: center;
+}
+
+.home-grid {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.statistics {
+    margin: 50px 10px 50px 0;
+    width: 90%;
+    text-align:justify;
+    text-justify:inter-word;
+}
+
+.stat-img {
+    margin-bottom: 50px;
+    margin-right: 10px;
+    float: left;
+    border: 5px solid #3AAED8;
+    border-radius: 10px;
+}
+
+.hands {
+    margin: 50px 10px 50px 0;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 634px auto;
+    grid-column-gap: 10px;
+}
+
+.hands-img {
+    border: 5px solid #52AA5E;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#para {
+    align-self: center;
+}
+
+#para p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+footer {
+    margin-top: 150px;
+    width: 92.5%;
+    height: 100px;
+    background-color: #52AA5E;
+    color:white;
+    padding: 25px 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.4em;
+}
+
+#fb {
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+#fb:hover {
+    transform: rotate(360deg);
+}
+
+#twitter {
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+#twitter:hover {
+    transform: rotate(360deg);
+}
+
+#instagram {
+    border-radius: 50%;
+    transition: all 0.7s ease-in-out;
+}
+
+#instagram:hover {
+    transform: rotate(360deg);
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: yellow;
+}
