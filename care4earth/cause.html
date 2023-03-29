@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Care4Earth | Homepage</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
-      <a href="index.html" id="logo_link">
+      <a href="index.html" id="logo-link">
         <img class="logo" src="images/logocare.PNG" alt="Care4Earth logo" />
       </a>
       <nav>
@@ -18,19 +20,52 @@
         <a href="site-plan.html">Site Plan</a>
       </nav>
     </header>
-    <div class="scroll-img">
-      <h1>The devastating effects of climate changes</h1>
-      <div id="images-scrolling">
-        <img src="images/drought.jpg" alt="dried lake" />
-        <img src="images/erode.jpg" alt="eroded beach" />
-        <img src="images/flood.jpg" alt="flooded playground" />
-        <img src="images/forestfire.jpg" alt="forest on fire" />
-        <img src="images/wildfires.jpg" alt="wildifire" />
-        <img src="images/hunger.jpg" alt="hungry cow" />
+    <h1 id="slide-text">The devastating effects of climate change</h1>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 6</div>
+        <img src="images/drought.jpg" style="width: 100%" />
+        <div class="text">Dried lake</div>
       </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 6</div>
+        <img src="images/erode.jpg" style="width: 100%" />
+        <div class="text">Eroded beach</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 6</div>
+        <img src="images/flood.jpg" style="width: 100%" />
+        <div class="text">Flooded playground</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 6</div>
+        <img src="images/forestfire.jpg" style="width: 100%" />
+        <div class="text">Forest on fire</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 6</div>
+        <img src="images/wildfires.jpg" style="width: 100%" />
+        <div class="text">Wildfire</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 6</div>
+        <img src="images/hunger.jpg" alt="hungry cow" style="width: 100%" />
+        <div class="text">Hungered Cow</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
     </div>
     <main class="texts">
-      <h2>Main cause of climate changes</h2>
+      <h2>Main cause of climate change</h2>
       <p>
         Global warming occurs when carbon dioxide (CO2) and other air pollutants
         collect in the atmosphere and absorb sunlight and solar radiation that
@@ -44,9 +79,9 @@
         vapor, and synthetic fluorinated gases—are known as greenhouse gases,
         and their impact is called the greenhouse effect.
       </p>
-      <h2>Effects of climate changes</h2>
+      <h2>Effects of climate change</h2>
       <ul>
-        <li>Harsher heatwaves and rising sea levsls</li>
+        <li>Harsher heatwaves and rising sea levels</li>
         <p>
           Scientists agree that the earth’s rising temperatures are fueling
           longer and hotter heat waves, more frequent droughts, heavier
@@ -189,15 +224,47 @@
       <p><a href="site-plan.html">Site Plan</a></p>
       <div class="social">
         <a href="https://facebook.com" target="_blank">
-          <img src="images/facebook.png" alt="fb icon" />
+          <img id="fb" src="images/facebook.png" alt="fb icon" />
         </a>
         <a href="https://twitter.com" target="_blank">
-          <img src="images/twitter.png" alt="twitter icon" />
+          <img id="twitter" src="images/twitter.png" alt="twitter icon" />
         </a>
         <a href="https://instagram.com" target="_blank">
-          <img src="images/instagram.png" alt="instagram icon" />
+          <img id="instagram" src="images/instagram.png" alt="instagram icon" />
         </a>
       </div>
     </footer>
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
   </body>
 </html>
