@@ -293,3 +293,82 @@ footer a:hover {
     text-align:justify;
     text-justify:inter-word;
 }
+
+/**Third page styles start here**/
+
+.hero-protect {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.hero-protect img {
+    width: 100%;
+}
+
+#hero-img-protect {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-text-protect {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    font-family: Lobster, 'Times New Roman', serif;
+    color: rgb(149, 223, 1);
+}
+
+.protect-grid {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    grid-template-columns: 1fr;
+    line-height: 1.2;
+}
+
+.protect-grid h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.protect-grid p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.first-img img {
+    width: 40%;
+    border-radius: 7.5px;
+    border: solid 4px #3AAED8;
+    float: left;
+    margin-right: 15px;
+}
+
+.first-img {
+    margin-bottom: 50px;
+}
+
+.second-img img {
+    width: 40%;
+    border-radius: 7.5px;
+    border: solid 4px #52AA5E;
+    float: left;
+    margin-right: 15px;
+}
+
+.second-img {
+    margin-bottom: 50px;
+}
+
+.third-img img {
+    width: 40%;
+    height: 790px;
+    border-radius: 7.5px;
+    border: solid 4px #388659;
+    float: left;
+    margin-right: 15px;
+}
+
